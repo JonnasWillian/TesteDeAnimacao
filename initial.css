@@ -1,0 +1,130 @@
+body {
+    
+     background: url(./img/paisagem-de-inverno-com-neve-silhueta-de-veado-rio-contorno-de-floresta-colinas-plano-de-fundo-de-natal_191217-169.jpg); 
+     background-size: 300px 150px;
+
+     /* 
+        Imagem de fundo do site
+     https://developer.mozilla.org/pt-BR/docs/Web/Guide/CSS/Scaling_background_images
+      */
+    
+}
+
+main.initial {
+    text-align: center;
+
+    animation: ini 1s;
+
+    /*
+        Alinhamento ao centro das propriedades inciais e a animação
+     */
+    
+}
+
+main.initial h1, 
+h2,
+h3{
+    color: rgb(88, 233, 21);
+
+    /*
+        Cor das letras da propriedade inicial
+    */
+}
+
+main.initial h1{
+    font-family: 'Roboto Slab', serif;
+
+    /*
+        Fonte de letra H1 
+    */
+}
+
+main.initial h2{
+    font-family: 'Andika New Basic', sans-serif;
+
+    /*
+        Fonte de letra H2 
+    */
+}
+
+main.itens {
+    text-align: center;
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    margin-top: 30px;
+
+    animation: meio 2s ease-in;
+
+    /*
+        Caracteristicas da propriedade secundária e inclusão de animação 
+    */
+
+}
+
+main.itens p{
+    color: rgb(250, 138, 10);
+    font-size: 20px;
+
+    /*
+        Cor e tamanho da tag P 
+    */
+}
+
+main.itens ul.circle {
+    list-style-type: circle;
+
+    border:1px solid #25692A;
+    border-radius:4px;
+    display:inline-block;
+    cursor:pointer;
+    font-family:Verdana;
+    font-weight:bold;
+    font-size:13px;
+    padding:6px 10px;
+    text-decoration:none;
+
+    /*
+        Configuração da lista 
+    */
+
+}
+
+@keyframes ini{
+
+    0%{
+        transform: scale(0.1);
+        opacity: 0;
+    }
+
+    60%{
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+    100%{
+        transform: scale (1);
+    }
+
+    /*
+        Animação da primeira propriedade
+     */
+
+}
+
+@keyframes meio{
+
+    0%   { 
+        opacity: 0%;
+     }
+     25%  { opacity: 40%; }
+     50%  { opacity: 60%; }
+     75%  { opacity: 80%; }
+     100% { 
+        opacity: 100%;
+     }
+
+     /*
+        Animação da segunda propriedade
+     */
+}
